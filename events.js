@@ -1,5 +1,4 @@
-
-// When you type characters into the input field, the output element should mirror the text in the input field.
+// When any section is clicked the output target text should be "You clicked on the {text of the section} section"
 // The first section's text should be bold.
 // The last section's text should be bold and italicized.
 
@@ -13,12 +12,11 @@ var roundItBtn = document.getElementById("add-rounding");
 var guineaPig = document.getElementById("guinea-pig");
 var userInput = document.getElementById("keypress-input");
 var articleEl = document.getElementsByTagName("article-section");
-// var userClickerAlerter = document.getElementById("article-section");
+var userClickerAlerter = document.getElementById("article-section");
 
 // userClickerAlerter.addEventListener("click", function() {
-//   // Get the value chosen from the DOM
 //   userClickerAlerter = event.target.value;
-//   output = "<div> You clicked on the " + ouput.innerHTML + "</div>" 
+//   output.innerHTML = "<div> You clicked on the " + ouput.innerHTML + "</div>" 
 //   console.log(userClickerAlerter);
 // });
 // 
@@ -36,7 +34,7 @@ userInput.addEventListener("keyup", function(event){
 
 colorBtn.addEventListener("click", function() {
   guineaPig.classList.toggle("blue");
-})
+});
 
 hulkifyBtn.addEventListener("click", function() {
   guineaPig.classList.toggle("hulk");
